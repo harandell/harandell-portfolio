@@ -1,8 +1,9 @@
 # Harry Randell — portfolio
 
-A specs-first portfolio. AI writes most of my implementation code. What I own are the decisions: what to
-build, the rules it follows, the data model, the architecture, and the lessons from when it broke. So each
-project here is a **folder with its spec, not its code**.
+A specs-first portfolio. AI writes most of my implementation code. What I own is the system design and
+business logic (what to build, the rules it follows, the data model, the architecture), followed by
+rigorous testing, and the lessons from when it broke. So each project here is a **folder with its spec,
+not its code**.
 
 There are two kinds: **personal projects** I built end to end, and **work case studies** describing what
 I did on proprietary systems at my job.
