@@ -1,0 +1,24 @@
+# Server-sent event streams (text/event-stream). Each line is `data: <json>\n\n`. Illustrative values.
+
+## GET /api/strava/sync  (incremental — the user already has activities cached)
+# `saved` in a progress event is the count BEFORE that activity is processed.
+data: {"type":"start"}
+data: {"type":"incremental","since":"2025-05-18"}
+data: {"type":"fetching","count":6}
+data: {"type":"activities","count":4}                 # after filtering to the 7 relevant activity types
+data: {"type":"progress","index":1,"total":4,"saved":0,"name":"Morning Run"}
+data: {"type":"progress","index":2,"total":4,"saved":1,"name":"Lunch Walk"}
+data: {"type":"progress","index":3,"total":4,"saved":2,"name":"Treadmill"}   # a Run with no polyline: skipped, so saved stays at 2
+data: {"type":"progress","index":4,"total":4,"saved":2,"name":"Evening Ride"}
+data: {"type":"done","total":312,"new":3}             # total = all cached activities for this user
+# on failure at any point:
+data: {"type":"error","message":"Error: Strava API error: 429"}
+
+## GET /api/timeline/build?aoiId=…
+data: {"type":"status","message":"Processing 312 activities…"}
+data: {"type":"progress","progress":1,"date":"2023-04-02","coverage":4.3}
+data: {"type":"progress","progress":2,"date":"2023-04-05","coverage":6.7}
+...
+data: {"type":"progress","progress":100,"date":"2025-05-21","coverage":73.1}
+data: {"type":"done"}
+# progress = % of activity dates processed; coverage = % of eligible ways covered by that date

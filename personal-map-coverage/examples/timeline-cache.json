@@ -1,0 +1,28 @@
+{
+  "_comment": "Illustrative timeline_cache.data blob (trimmed). Fictional coordinates. coveredDate = first UTC date the cumulative corridor covered >= 50% of the way; passCount = activities that touched >= 10% of it.",
+  "ways": [
+    {
+      "id": 100000001,
+      "tags": { "highway": "footway", "name": "Ridge Path" },
+      "clippedSegments": [[[0.00100, 0.00100], [0.00150, 0.00130], [0.00210, 0.00170], [0.00260, 0.00240], [0.00300, 0.00310]]],
+      "coveredDate": "2025-03-02",
+      "passCount": 14
+    },
+    {
+      "id": 100000003,
+      "tags": { "highway": "steps" },
+      "clippedSegments": [[[0.00510, 0.00320], [0.00515, 0.00335]]],
+      "coveredDate": "2025-05-18",
+      "passCount": 2
+    },
+    {
+      "id": 100000002,
+      "tags": { "highway": "bridleway" },
+      "clippedSegments": [[[0.00400, 0.00050], [0.00420, 0.00110], [0.00450, 0.00180], [0.00470, 0.00260]]],
+      "coveredDate": null,
+      "passCount": 1
+    }
+  ],
+  "dates": ["2025-03-02", "2025-03-04", "2025-03-09", "2025-05-18"],
+  "activitiesByDate": { "2025-03-02": 1, "2025-03-04": 2, "2025-03-09": 1, "2025-05-18": 1 }
+}

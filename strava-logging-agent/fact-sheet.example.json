@@ -1,0 +1,57 @@
+{
+  "_comment": "Illustrative FactSheet (fictional persona). Produced by runChecklist() in code; the model receives this verbatim and contributes only judgment + prose. Every number here is FINAL.",
+  "activity": {
+    "id": 9000000065,
+    "name": "Morning Run",
+    "description": "",
+    "sport_type": "Run",
+    "distance": 21412.3,
+    "moving_time": 6905,
+    "elapsed_time": 7180,
+    "total_elevation_gain": 142,
+    "start_date": "2026-10-11T07:02:11Z",
+    "start_date_local": "2026-10-11T08:02:11Z",
+    "timezone": "(GMT+00:00) Europe/London",
+    "start_latlng": [51.5501, -1.2003],
+    "gear_id": "g10000002",
+    "commute": false,
+    "hide_from_home": false,
+    "average_heartrate": 151.2,
+    "device_name": "Garmin Forerunner",
+    "manual": false,
+    "visibility": "everyone"
+  },
+  "duplicateOf": null,
+  "series": {
+    "name": "Scout",
+    "nextNumber": 65,
+    "reason": "starts 40m from Scout's house"
+  },
+  "sportFix": { "to": "TrailRun", "gear_id": "g10000001" },
+  "flagHint": "start_latlng 51.5501,-1.2003 — derive country flag",
+  "counters": {
+    "halfMarathon": 39,
+    "northgateCommon": 258
+  },
+  "monthly21k": {
+    "month": "October",
+    "qualifies": false,
+    "reason": "a ≥21.1km run already happened earlier this month — this one still earns its Half Marathon #N counter but isn't the October 21k"
+  },
+  "commute": null,
+  "weatherLine": "Weather: Cool and partly cloudy (11°C).",
+  "peaksLine": "Hills: Northgate Rise (58 m)",
+  "muting": { "shouldBeMuted": false },
+  "patterns": {
+    "recentSameSport": [
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Friday ☕️ — 2026-10-09 (Fri) 07:15, 34min",
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Scout #64 — 2026-10-07 (Wed) 18:40, 41min",
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Striders #112 — 2026-10-06 (Tue) 19:00, 52min",
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 October 21k — 2026-10-04 (Sun) 08:30, 118min"
+    ],
+    "sameWeekday": [
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 October 21k — 2026-10-04 (Sun) 08:30, 118min",
+      "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Scout #61 — 2026-09-27 (Sun) 08:05, 63min"
+    ]
+  }
+}

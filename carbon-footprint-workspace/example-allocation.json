@@ -1,0 +1,15 @@
+{
+  "_note": "Illustrative and synthetic. Not production data or a real schema. It shows the SHAPE of an allocation record: an activity record apportioned onto one crop on one field, with a strategy AND a frozen basis snapshot, so a report run today still reproduces tomorrow even if the underlying data changes.",
+
+  "entity_type": "fuel_purchase",
+  "entity_id": "example-fuel-0001",
+  "allocated_to": { "level": "field_crop", "id": "example-field-n4-wheat-2026" },
+  "strategy": "area_weighted",
+  "share": 0.34,
+  "basis_snapshot": {
+    "crop_area": { "value": 68, "unit": "ha" },
+    "allocation_universe_area": { "value": 200, "unit": "ha" },
+    "computed_share": "68 / 200 = 0.34"
+  },
+  "note": "Confidence is derived on read, not stored; the universe is inferred from sibling allocations. The snapshot is what makes historical reports reproducible."
+}

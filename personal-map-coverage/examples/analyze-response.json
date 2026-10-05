@@ -1,0 +1,21 @@
+{
+  "_comment": "Illustrative GET /api/analyze?aoiId=… response (trimmed to 2 of 208 ways). Fictional AOI and coordinates near 0°,0°, not a real place.",
+  "covered": [
+    {
+      "id": 100000001,
+      "tags": { "highway": "footway", "name": "Ridge Path", "surface": "gravel" },
+      "coordinates": [[0.00100, 0.00100], [0.00150, 0.00130], [0.00210, 0.00170], [0.00260, 0.00240], [0.00300, 0.00310]],
+      "clippedSegments": [[[0.00100, 0.00100], [0.00150, 0.00130], [0.00210, 0.00170], [0.00260, 0.00240], [0.00300, 0.00310]]]
+    }
+  ],
+  "missed": [
+    {
+      "id": 100000002,
+      "tags": { "highway": "bridleway" },
+      "coordinates": [[0.00400, 0.00050], [0.00420, 0.00110], [0.00450, 0.00180], [0.00470, 0.00260]],
+      "clippedSegments": [[[0.00400, 0.00050], [0.00420, 0.00110], [0.00450, 0.00180], [0.00470, 0.00260]]]
+    }
+  ],
+  "stats": { "total": 208, "covered": 152, "missed": 56, "percentage": 73.1 },
+  "visitsToArea": 47
+}

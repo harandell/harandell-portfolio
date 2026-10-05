@@ -1,0 +1,25 @@
+{
+  "_note": "Illustrative and synthetic. Not real field geometry or customer data. It shows the shape of a validated field boundary as it attaches to the farm hierarchy.",
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-1.4512, 53.1090],
+        [-1.4480, 53.1092],
+        [-1.4476, 53.1070],
+        [-1.4509, 53.1068],
+        [-1.4512, 53.1090]
+      ]
+    ]
+  },
+  "properties": {
+    "customer": "Example Farms Ltd",
+    "organisation": "North Estate",
+    "farm": "Example Farm",
+    "field": "N4",
+    "crop": "winter wheat 2026",
+    "area": { "value": 68, "unit": "ha" },
+    "validation": { "ring_closed": true, "coordinates_valid": true, "status": "valid" }
+  }
+}

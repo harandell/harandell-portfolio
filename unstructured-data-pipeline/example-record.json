@@ -1,0 +1,34 @@
+{
+  "_note": "Illustrative and synthetic. Not production data, not a real schema. It shows the SHAPE of a validated record: the canonical fields, the validation result, the two confidence signals, and the provenance that makes 'is this right?' answerable.",
+
+  "entity_type": "fuel_purchase",
+  "source": {
+    "document": "example_supplier_invoice_2026-03.pdf",
+    "page": 1,
+    "extracted_by": "llm"
+  },
+  "record": {
+    "supplier": "Example Fuels Ltd",
+    "fuel_type": "red_diesel",
+    "quantity": { "value": 1200, "unit": "litres" },
+    "purchase_date": "2026-03-14",
+    "cost": { "value": 1356.00, "currency": "GBP" }
+  },
+  "validation": {
+    "status": "passed",
+    "completeness": 1.0,
+    "required_fields_present": ["supplier", "fuel_type", "quantity", "purchase_date"],
+    "type_ok": true,
+    "enum_ok": true
+  },
+  "confidence": {
+    "deterministic_completeness": 1.0,
+    "llm_judge": 0.93,
+    "flags": []
+  },
+  "provenance": {
+    "alias_applied": { "from": "Red Diesel (gas oil)", "to": "red_diesel" },
+    "reviewed_by": "pipeline",
+    "escalated_to_human": false
+  }
+}
